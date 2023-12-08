@@ -15,10 +15,14 @@ class LoginController {
     public function listarLogins() {
         return $this->loginModel->listarLogins();
     }
-
+     
+    public function listarLoginUsuario($id_usuario) {
+        return $this->loginModel->listarLoginUsuario($id_usuario);
+    }
+     
     public function exibirListaLogins() {
         $logins = $this->loginModel->listarLogins();
-        include 'C:\xampp\htdocs\biblioteca-virtual\src\app\Views\login\lista.php';
+        include 'C:\xampp\htdocs\biblioteca-virtual\src\index\app\Views\login\lista.php';
     }
 
     public function atualizarLogin($id_usuario, $nome, $email, $senha) {
@@ -26,7 +30,7 @@ class LoginController {
     }
 
     public function excluirLogin ($id_usuario) {
-        $this->loginModel->excluirLogin($id_usuario);
+        return $this->loginModel->excluirLogin($id_usuario);
     }
 
 }

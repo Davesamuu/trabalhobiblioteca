@@ -18,11 +18,18 @@ class LoginModel {
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function listarLoginUsuario($id_usuario) {
+        $sql = "SELECT * FROM usuarios WHERE id_usuario = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$id_usuario]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);   
+    }
     
     public function atualizarLogin($id_usuario, $nome, $email, $senha) {
         $sql = "UPDATE usuarios SET nome = ?, email = ?, senha = ? WHERE id_usuario = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([ $nome, $email, $senha, $id_usuario]);
+        $stmt->execute([$nome, $email, $senha, $id_usuario]);
     }
     
     public function excluirLogin($id_usuario) {

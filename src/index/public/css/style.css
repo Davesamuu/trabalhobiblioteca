@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color:rgb(5, 5, 173);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color:rgb(8, 8, 224);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color:rgb(8, 8, 224);
+}
+
+/* Estilos para as mensagens de erro e sucesso */
+div {
+    text-align: center;
+    font-weight: bold;
+}
+
+div[style="color: red;"] {
+    color: red;
+}
+
+div[style="color: green;"] {
+    color:#0000ff;
+}
+
+.principal  {
+   display:flex;
+   width: 100%;
+   justify-content: space-around;
+   height: 100%;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Jester', sans-serif;
+    color:rgb(0, 0, 145);
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color:rgb(0, 0, 137);
+}
+
+.direita #formularioLogar {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.direita #formularioRegistro {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.risco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 80vh;
+    
+}
+
+.risco-bg {
+    z-index: 0;
+    position: absolute;
+    background-color: rgb(0, 0, 100);
+    width: 99.3%;
+    height: 150px;
+   
+    
+
+}
+
+.image2 {
+    z-index: 1000;
+}
+.image2 img {
+    position: absolute;   
+    z-index: 1000;
+   height: 200px;
+   width: 700px;
+   top: 50px;
+   left: 160px;
+
+}
+
+.image {
+    z-index: 1000;
+}
+.image img {
+    position: absolute;   
+    z-index: 1000;
+   height: 500px;
+   width: 500px;
+   top: 50px;
+   left: -30px;
+
+}
+
+.image3 {
+    z-index: 1000;
+}
+.image3 img {
+    position: absolute;   
+    z-index: 1000;
+   height: 295px;
+   width: 50vw;
+   height: 44.1vh;
+   top: 400px;
+   left: 0px;
+
+}
+
+
+
+
+
+
+
