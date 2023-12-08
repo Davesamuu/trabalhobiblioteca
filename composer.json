@@ -1,0 +1,17 @@
+{
+    "name": "aluno/trabalhobiblioteca",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Trabalhobiblioteca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davesamuu",
+            "email": "rdavisamuel@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}
